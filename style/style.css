@@ -1,0 +1,136 @@
+body{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: inter,serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.conteiner{
+    margin: 0 auto;
+}
+.head{
+    height: 122px;
+    display: flex;
+    padding: 0 19% 0 19%;
+    align-items: center;
+}
+.head span{
+    font-weight: 600;
+    font-size: 24px;
+}
+.nav{
+    
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    margin-left: auto;
+}
+.nav p{
+    margin: 0 0 0 25px;
+}
+/*----*/
+footer{
+    margin-top: 130px;
+    height: 59px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+.foot{
+    height: 100%;
+    padding: 0 19% ;
+    display:flex;
+}
+.foot span{
+    line-height: 59px;
+}
+.it1{
+    width: 229px;
+    float: left;
+}
+.it2{
+    align-items: center;
+    margin: 0 auto;
+    line-height: 59px;
+}
+.it3{
+    width: 229px;
+    float: right;
+    line-height: 59px;
+}
+/*----*/
+
+
+
+
+
+.item{
+    margin: 0 20px;
+    opacity: 0.5;
+    transition: all 0.5s ease 0s;
+}
+.slick-slide{
+    max-height: 700px;
+}
+.slick-center{
+    opacity: 1;
+}
+.slick-dotted.slick-slider{
+    margin-bottom: 50px;
+}
+.slick-track{
+    width: 100%;
+    height: auto;
+}
+.but{
+    display: flex;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    position: static;
+    margin-top: -20px;
+}
+.slick-dots li{
+    list-style: none;
+    margin-left: 3px;
+    width: 13px;
+    height: 13px;
+}
+.slick-dots li button{
+    padding: 0;
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+.slick-dots li button::before{
+    padding: 0;
+    font-size: 0;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+.slick-arrow{
+    position:static;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.next{
+    margin-left: 130px;
+}
+.ar{
+    margin: 0 auto;
+}
