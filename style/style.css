@@ -1,4 +1,5 @@
-body{
+html,body{
+    height: 100%;
     max-width: 100%;
     padding: 0;
     margin: 0;
@@ -12,34 +13,16 @@ a{
 .conteiner{
     overflow: hidden;
     margin: 0 auto;
-}
-/*--
-.head{
-    height: 122px;
+    min-height: 100%;
     display: flex;
-    padding: 0 19% 0 19%;
-    align-items: center;
+    flex-direction: column;
+
 }
-.head p{
-    font-weight: 600;
-    font-size: 24px;
-}
-.nav{
-    display: flex;
-    margin-left: auto;
-}
-.header_burger{
-    display: none;
-}
-.nav p{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 0 25px;
-}--*/
 /*----*/
 footer{
-    margin-top: 130px;
-    height: 59px;
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
 }
 .line{
     width: 100%;
@@ -47,8 +30,10 @@ footer{
     background: #000;
 }
 .foot{
-    height: 100%;
-    padding: 0 19% ;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 59px;
+    max-width: 1180px;
     display:flex;
 }
 .foot span{
@@ -68,13 +53,72 @@ footer{
     text-align: end;
     line-height: 59px;
 }
+.main{
+    margin-top: 120px;
+    flex: 1 1 auto;
+}
+
+/**-----*/
+
+/*header*/
+.header_burger{
+    display: none;
+}
+
+
+.header_logo{
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    z-index: 3;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.header_body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header_list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header_list li{
+    list-style: none;
+    margin-left: 25px;
+}
+.header_link{
+    font-size: 20px;
+    font-weight: 400;
+}
 /*----*/
 
 
 
-.main{
-    margin-top: 120px;
-}
+
 
 .item{
     margin: 0 20px;
@@ -138,17 +182,18 @@ footer{
 }
 
 
-@media screen and (max-width:1345px){
-    .head{
-        padding: 0 10%;
+@media screen and (max-width:910px){
+    .header_body{
+        height: 70px;
     }
-}
-@media screen and (max-width:1040px){
-    .head{
-        padding: 0 2%;
+    .header_logo{
+        font-size: 20px;
     }
-    .foot{
-        padding: 0 5%;
+    .header_link{
+        font-size: 18px;
+    }
+    .main{
+        margin-top: 70px;
     }
 }
 @media screen and (max-width: 880px){
@@ -168,66 +213,14 @@ footer{
         font-size: 16px;
     }
 }
-/**-----*/
 
 
-.header_burger{
-    display: none;
-}
-
-
-.header_logo{
-    font-weight: 600;
-    font-size: 24px;
-    position: relative;
-    z-index: 3;
-}
-.header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-}
-.header::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    z-index: 2;
-}
-.header_body{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-}
-.wrapper{
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.header_list{
-    display: flex;
-    position: relative;
-    z-index: 2;
-}
-.header_list li{
-    list-style: none;
-    margin-left: 25px;
-}
-.header_link{
-    font-size: 20px;
-    font-weight: 400;
-}
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 810px){
     body.lock{
         overflow: hidden;
+    }
+    .slick-dotted.slick-slider{
+        margin-bottom: 15px;
     }
     .header_burger{
         display: block;
@@ -279,7 +272,7 @@ footer{
         width: 100%;
         height: 100%;
         background-color: white;
-        padding: 100px 0 0 0 ;
+        padding: 70px 0 0 0 ;
         transition: all 0.5s ease 0s;
         overflow: auto;
     }
@@ -291,5 +284,46 @@ footer{
     }
     .header_list li{
         margin: 0 0 30px 0;
+    }
+    .it1 span{
+        font-size: 18px;
+    }
+    .it3{
+        font-size: 14px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 510px){
+    .item{
+        max-width: 487px;
+    }
+    .it1{
+        width: 105px;
+    }
+    .it1 span{
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 470px){
+    .foot{
+        display: block;
+    }
+    .it1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .it2{
+        width: auto;
+        float: left;
+        line-height: normal;
+    }
+    .it3{
+        width: auto;
+        line-height: normal;
+    }
+}
+@media screen and (max-width: 350px){
+    .item{
+        max-width: 320px;
     }
 }
