@@ -4,7 +4,7 @@ html,body{
     padding: 0;
     margin: 0;
     font-size: 20px;
-    font-family: inter, serif;
+    font-family: inter,serif;
 }
 a{
     text-decoration: none;
@@ -53,10 +53,7 @@ footer{
     text-align: end;
     line-height: 59px;
 }
-.main{
-    margin-top: 120px;
-    flex: 1 1 auto;
-}
+
 
 /**-----*/
 
@@ -118,83 +115,119 @@ footer{
     display: none;
 }
 /*----*/
-
-
-
-
-
-.item{
-    margin: 0 20px;
-    transition: all 0.5s ease 0s;
+.main{
+    margin-top: 120px;
 }
-.slick-slide{
-    max-height: 700px;
-}
-.slick-dotted.slick-slider{
-    margin-bottom: 50px;
-}
-.slick-track{
-    width: 100%;
-    height: auto;
-}
-.but{
-    display: flex;
-}
-.slick-dots{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: auto;
-    position: static;
-    margin-top: -20px;
-}
-.slick-dots li{
-    list-style: none;
-    margin-left: 3px;
-    width: 13px;
-    height: 13px;
-}
-.slick-dots li button{
-    padding: 0;
-    font-size: 0;
-    width: 13px;
-    height: 13px;
-    background-color: #C4C4C4;
-    border-radius: 50%;
-}
-.slick-dots li button::before{
-    padding: 0;
-    font-size: 0;
-    width: 13px;
-    height: 13px;
-    background-color: black;
-    border-radius: 50%;
-}
-.slick-arrow{
-    position:static;
-    padding: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-.next{
-    margin-left: 130px;
-}
-.ar{
+.svad_foto{
+    max-width: 1180px;
     margin: 0 auto;
 }
+#sv{
+    width: 100%;
+    height: 100%;
+    margin-top: 31px;
+}
+.svad_foto h1{
+    font-weight: 600;
+    font-size: 40px;
+    width: auto;
+    text-align: center;
+    border: 2px solid black;
+    margin:0 20%;
+}
+.bl{
+    margin-top: 60px;
+    width: 100%;
+    background: #000;
+    color: white;
+}
+.bl_wr{
+    margin: 0 auto;
+    max-width: 1180px;
+    border: 1px solid white;
+    border-width: 0px 1px;
+    text-align: center;
+}
+.bl_wr p{
+    max-width: 907px;
+    max-height: 150px;
+    margin:auto;
+    padding: 50px 0;
+    font-weight: 500;
+    font-size: 25px;
+}
+.pak{
+    max-width: 1180px;
+    margin: 100px auto 0 auto;
+}
+.pak_{
+    display: flex;
+}
+.pak_1{
+    width: 348px;
+    border: 1px solid black;
+    margin: 0 10px;
+    padding: 30px 20px 0 18px;
+}
+.pak_1 h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+.pak_1 ul{
+    padding: 10px;
+    margin: 0;
+    min-height: 325px;
+}
+.pak_list{
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.cen{
+    display: flex;
+    font-weight: 500;
+    font-size: 17px;
+}
+.cen h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+}
 
-
-@media screen and (max-width: 880px){
-    .slick-slide{
-        max-height: 500px;
-    }
-    .item{
-        margin: 0 10px;
-    }
-    footer{
-        margin-top: 50px;
-    }
+.zap{
+    margin: 100px 10px 0 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 238px;
+}
+.zap_tel{
+    height: 100%;
+    background: #000;
+}
+.zap_tel:hover{
+    background: rgb(194, 194, 194);
+    transition: all ease 0.2s ;
+}
+.zap_btn{
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15%;
+}
+.zap_btn p{
+    margin:0;
+}
+.zap_txt{
+    padding: 12px 0px 10px 15px;
+}
+.zap_txt ul{
+    margin: 0;
+    padding-left: 15px;
+}
+.zap span{
+    font-weight: 700;
 }
 
 
@@ -224,9 +257,6 @@ footer{
 @media screen and (max-width: 810px){
     body.lock{
         overflow: hidden;
-    }
-    .header_logo{
-        margin: 0 auto;
     }
     .slick-dotted.slick-slider{
         margin-bottom: 15px;
@@ -290,7 +320,6 @@ footer{
     }
     .header_list{
         display: block;
-        margin-bottom: 70px;
     }
     .header_list li{
         margin: 0 0 30px 0;
@@ -319,14 +348,3 @@ footer{
 }
 /*---*/
 
-
-@media screen and (max-width: 510px){
-    .item{
-        max-width: 487px;
-    }
-}
-@media screen and (max-width: 350px){
-    .item{
-        max-width: 320px;
-    }
-}
