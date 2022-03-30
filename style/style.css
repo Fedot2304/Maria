@@ -323,6 +323,7 @@ footer{
 @media screen and (max-width: 510px){
     .item{
         max-width: 487px;
+        max-height: 300px;
     }
 }
 @media screen and (max-width: 350px){
