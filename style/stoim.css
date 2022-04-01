@@ -230,6 +230,62 @@ footer{
     font-weight: 700;
 }
 
+.ost{
+    max-width: 1180px;
+    margin: 100px auto 0 auto;
+}
+#ost_img{
+    width: 100%;
+}
+.ost_pak{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+}
+.ost_item{
+    border: 1px solid black;
+    padding: 30px 0 30px 30px ;
+    margin-top: 10px;
+    height: 430px;
+}
+.ost_item h1{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 20px;
+}
+#ost_it_h{
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    padding: 0;
+    border: 1px solid black;
+}
+.ost_it{
+    margin: 0 10px 0 10px; 
+}
+.ost_item ul{
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 2px;
+    
+}
+.ost_item li{
+   margin-top: 12px;
+}
+.ps p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#cen_1{
+    margin-top: 25px;
+}
+#cen_2{
+    margin-top: 60px;
+}
+
 
 /*----*/
 @media screen and (max-width:910px){
@@ -348,3 +404,108 @@ footer{
 }
 /*---*/
 
+@media screen and (max-width: 1060px){
+    #cen_3{
+        margin-top: 40px;
+    }
+    .bl_wr p{
+        font-size: 19px;
+        padding: 10px;
+    }
+    .ost_item{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 870px){
+    #ost_it_h{
+        font-size: 22px;
+    }
+    .ost_item{
+        padding: 20px 5px 5px 25px;
+    }
+    .ost_item h1{
+        margin-top: 0;
+    }
+    #cen_2{
+        margin-top: 80px;
+    }
+    .ost_item li{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 830px){
+    .ost_item{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 810px){
+    .main{
+        margin-bottom: 100px;
+    }
+    .svad_foto h1{
+        font-size: 30px;
+    }
+    .bl{
+        margin-top: 30px;
+    }
+    .pak{
+        margin-top: 50px;
+    }
+    .pak_{
+        display: block;
+    }
+    .pak_1{
+        margin: 30px auto;
+    }
+    .ost_pak{
+        display: block;
+    }
+    .ost_it{
+        width: 426px;
+        margin: 50px auto 0 auto;
+    }
+    #ost_it_h{
+        background: #000;
+        color: white;
+    }
+    .ost_item{
+        height: 400px;
+    }
+    #cen_3{
+        margin-top: 180px;
+    }
+    .bl_wr p{
+        font-size: 14px;
+    }
+    .zap_tel:hover{
+        background: black;
+        transition: none;
+    }
+}
+@media screen and (max-width: 610px){
+    .zap{
+        display: block;
+        width: 90%;
+        margin: 50px auto 0 auto;
+    }
+    .zap_btn{
+        padding: 0;
+    }
+    .zap_btn p{
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 445px){
+    .ost_it{
+        width: 90%;
+    }
+    .pak_1{
+        width: 80%;
+    }
+    .ost{
+        margin-top: 40px;
+    }
+    .ost_pak{
+        margin: 0;
+    }
+}
