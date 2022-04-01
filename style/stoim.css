@@ -314,6 +314,9 @@ footer{
     body.lock{
         overflow: hidden;
     }
+    .header_logo{
+        margin: 0 auto;
+    }
     .slick-dotted.slick-slider{
         margin-bottom: 15px;
     }
@@ -507,5 +510,19 @@ footer{
     }
     .ost_pak{
         margin: 0;
+    }
+}
+@media screen and (max-width: 420px){
+    #cen_3{
+        margin-top: 140px;
+    }
+    #cen_2{
+        margin-top: 35px;
+    }
+    .ps p{
+        margin-top: 0;
+    }
+    .zap_txt{
+        font-size: 15px;
     }
 }
