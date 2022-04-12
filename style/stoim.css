@@ -113,10 +113,11 @@ footer{
 .bug_foot{
     display: none;
 }
-/*----*/
 .main{
     margin-top: 120px;
 }
+/*----*/
+
 .svad_foto{
     max-width: 1180px;
     margin: 0 auto;
@@ -127,18 +128,16 @@ footer{
     margin-top: 31px;
 }
 .svad_foto h1{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 40px;
     width: auto;
     text-align: center;
-    border: 2px solid black;
-    margin:0 20%;
+    background: #D7D4D4;
+    margin:0 ;
 }
 .bl{
     margin-top: 60px;
     width: 100%;
-    background: #000;
-    color: white;
 }
 .bl_wr{
     margin: 0 auto;
@@ -164,7 +163,7 @@ footer{
 }
 .pak_1{
     width: 348px;
-    border: 1px solid black;
+    background: #E8E2DE;
     margin: 0 10px;
     padding: 30px 20px 0 18px;
 }
@@ -202,14 +201,9 @@ footer{
 }
 .zap_tel{
     height: 100%;
-    background: #000;
-}
-.zap_tel:hover{
-    background: rgb(194, 194, 194);
-    transition: all ease 0.2s ;
+    background: #D7D4D4;
 }
 .zap_btn{
-    color: white;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -242,7 +236,7 @@ footer{
     display: flex;
 }
 .ost_item{
-    border: 1px solid black;
+    background: #E8E2DE;
     padding: 30px 0 30px 30px ;
     margin-top: 10px;
     height: 430px;
@@ -259,7 +253,7 @@ footer{
     font-size: 30px;
     line-height: 45px;
     padding: 0;
-    border: 1px solid black;
+    background: #D7D4D4;
 }
 .ost_it{
     margin: 0 10px 0 10px; 
@@ -460,7 +454,6 @@ footer{
     .pak_1{
         margin: 30px auto;
         border: 0px;
-        background: rgb(207, 207, 207);
     }
     .ost_pak{
         display: block;
@@ -469,28 +462,14 @@ footer{
         width: 426px;
         margin: 50px auto 0 auto
     }
-    #ost_it_h{
-        background: rgb(194, 189, 189);
-        border: 0px ;
-    }
     .ost_item{
         height: 400px;
-        border: 0px;
-        background: rgb(207, 207, 207);
     }
     #cen_3{
         margin-top: 180px;
     }
     .bl_wr p{
         font-size: 14px;
-    }
-    .bl{
-        background: white;
-        color: #000;
-    }
-    .zap_tel:hover{
-        background: black;
-        transition: none;
     }
 }
 @media screen and (max-width: 610px){
@@ -519,6 +498,12 @@ footer{
     .ost_pak{
         margin: 0;
     }
+    .svad_foto h1{
+        font-size: 25px;
+    }
+    #sv{
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 420px){
     #cen_3{
@@ -532,5 +517,10 @@ footer{
     }
     .zap_txt{
         font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .ost_item{
+        height: 500px;
     }
 }
