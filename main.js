@@ -6,6 +6,7 @@ $('.slider').slick({
     centerMode:true,
     variableWidth:true,
     dots:true,
+    waitForAnimate:false,
     speed:1200,
     autoplay:true,
     autoplaySpeed:2000,
