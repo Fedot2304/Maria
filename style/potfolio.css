@@ -119,6 +119,7 @@ footer{
 /*----*/
 .tx{
     position: relative;
+    margin-bottom: 80px;
 }
 .tx h1{
     margin: 0;
@@ -213,6 +214,9 @@ footer{
     }
     .tabs_item{
         font-size: 20px;
+    }
+    .tx{
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width:550px){
